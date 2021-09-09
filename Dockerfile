@@ -24,7 +24,8 @@ RUN npm ci \
 
 COPY . .
 
-ENV PORT 80
+ENV PORT=80
+ENV DATABASE_URL="postgres://postgres:postgres@localhost/postgres"
 
 EXPOSE 80
 
